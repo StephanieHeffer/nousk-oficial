@@ -1,0 +1,384 @@
+h1,
+h2,
+h3,
+.menu-nousk {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background-color: #4d663d;
+}
+
+/*Menu*/
+.header {
+  width: 100%;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 70px;
+  background-color: #4d663d;
+}
+
+.header a {
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.menu-header {
+  text-align: right;
+}
+
+.menu-header ul li a {
+  margin-left: 20px;
+}
+
+.menu-header a:hover {
+  color: #ff9933;
+}
+
+.logo-nousk {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.header .redes-sociais {
+  float: right;
+  display: grid;
+  margin: 20px 50px;
+  text-align: right;
+}
+
+.header .redes-sociais img {
+  padding-bottom: 7px;
+}
+
+/* Introducao */
+.introducao {
+  margin-top: 70px;
+}
+
+.introducao img {
+  z-index: -1;
+}
+
+.introducao .fundo-noob-baixo {
+  float: right;
+  margin-top: -50px;
+}
+
+.introducao h1 {
+  color: #f1e1b1;
+  font-size: 96px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.introducao h1 span {
+  color: #ff9933;
+}
+
+/*Ferramentas*/
+
+.ferramentas {
+  margin-top: 50px;
+}
+
+.ferramentas .ferra-drop {
+  display: flex;
+  justify-content: center;
+}
+
+.ferramentas #drop-tools {
+  background-color: transparent;
+  color: #fff;
+}
+
+.img-fundo {
+  z-index: -1;
+  margin: auto;
+  display: flex;
+}
+
+.resultado-tools {
+  margin-top: 50px;
+}
+
+.resultado-texto {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+}
+
+.resultado-tools h3 {
+  color: #ff9933;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.resultado-tools p {
+  color: #fff;
+}
+
+/* Projetos Slide */
+.projetos {
+  margin-top: 170px;
+}
+
+.projetos h3 {
+  font-size: 24px;
+  color: #f1e1b1;
+  text-align: center;
+}
+
+.projetos .carousel {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/*Blog*/
+.blog {
+  margin-top: 50px;
+}
+
+.posts-blogs h1 {
+  color: #ff9933;
+  font-size: 18px;
+}
+
+.posts-blogs h1 {
+  text-align: center;
+}
+
+.posts-blogs h1,
+.posts-blogs div,
+.posts-blogs p {
+  margin-bottom: 5px;
+}
+
+.blog-intro {
+  display: grid;
+  justify-content: center;
+}
+
+.blog-intro h3 {
+  font-size: 24px;
+  color: #ff9933;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog-intro p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog-intro a {
+  color: #f1e1b1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*Footer*/
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.home .footer .redes-sociais {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.footer .redes-sociais img {
+  margin-left: 7px;
+}
+
+.footer hr {
+  color: #fff;
+}
+
+.footer .menu-footer a {
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.conteudo-footer {
+  margin-top: 30px;
+}
+
+.menu-footer ul li {
+  margin-bottom: 15px;
+}
+
+#btn-enviar {
+  padding: 10px;
+  background-color: #ff9933;
+  float: right;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.home .conteudo-footer form {
+  float: right;
+}
+
+.text-inputs {
+  margin-top: 10px;
+}
+
+.conteudo-footer input {
+  margin-bottom: 10px;
+}
+
+/*pessoal*/
+
+.pessoal {
+  background-color: white;
+}
+
+.pessoal .menu-nousk,
+.home-blog .menu-nousk {
+  text-align: center;
+  height: 50px;
+}
+
+.eu {
+  margin-top: 100px;
+}
+
+.eu h1 {
+  font-size: 96px;
+  color: #ff9933;
+  text-align: center;
+}
+
+.texto-eu,
+.img-eu,
+.suzi-luppi {
+  margin-top: 50px;
+}
+
+.img-eu {
+  text-align: center;
+}
+.img-eu img {
+  height: 300px;
+}
+
+.suzi-luppi img {
+  height: 100px;
+}
+
+.suzi-luppi {
+  display: grid;
+}
+
+.suzi-luppi .luppi {
+  margin-left: 10%;
+}
+
+.suzi-luppi .suzi {
+  margin-top: 50px;
+  margin-left: 50%;
+}
+
+/*pessoal - projetos*/
+.pessoal h3 {
+  color: #3c4932;
+}
+
+.pessoal p {
+  color: #3c4932;
+}
+
+.pessoal form {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.pessoal .footer .redes-sociais {
+  justify-content: center;
+  display: flex;
+}
+
+/*Blog*/
+.intro-blog h3 {
+  color: #ff9933 !important;
+  font-size: 96px;
+  text-align: center;
+  margin-top: -200px;
+}
+
+.intro-blog {
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.intro-blog img {
+  z-index: -1;
+}
+
+.intro-blog .fundo-noob-baixo {
+  float: right;
+  margin-top: -50px;
+}
+
+.blog-form {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.blog-form input {
+  width: inherit;
+  text-align: center;
+}
+
+#form-blog {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.home-blog .footer .redes-sociais {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.divisor {
+  height: 40px;
+  width: 100%;
+  background-color: #3c4932;
+}
+
+.post-title h1 {
+  font-size: 36px;
+  color: #505f5f;
+}
+
+.text-post {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/*Responsivo*/
+
+@media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
