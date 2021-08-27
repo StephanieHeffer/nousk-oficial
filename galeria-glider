@@ -1,0 +1,57 @@
+
+
+
+
+
+ <section class="row c-carousel c-carousel--video" style="background-color: #5B5758; margin: 0 -100%; padding: 0 100%;">
+        <button class=" col-12 col-sm-2 js-carousel--video-prev" style="color: white;background: transparent;font-weight: bold;border-color: transparent;outline: none !important;font-size: -webkit-xxx-large;">&lt;</button>
+        <div class="col-12 col-sm-8 c-carousel__slides js-carousel--video" style="padding-left: 0 !important; padding-right: 0 !important;">
+            <?php $post_count = 0; ?>
+            <?php while (have_posts() && $paged == 1) : ?>
+                <?php the_post(); ?>
+                <?php get_template_part('templates/components/highlight-video'); ?>
+                <?php $post_count++; ?>
+                <?php if ($post_count === 3) { ?>
+                    <?php break; ?>
+                <?php  } ?>
+            <?php endwhile; ?>
+        </div>
+        <button class="col-12 col-sm-2 js-carousel--video-next" style="color: white;background: transparent;font-weight: bold;border-color: transparent;outline: none !important;font-size: -webkit-xxx-large;">&gt;</button>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/_slidehomevideo.js"></script>
+    </section>
+
+var $simpleCarousel = document.querySelector(".js-carousel--video");
+
+new Glider($simpleCarousel, {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+  arrows: {
+    prev: ".js-carousel--video-prev",
+    next: ".js-carousel--video-next",
+  },
+});
+
+
+var $simpleCarousel = document.querySelector(".js-carousel--simple");
+
+new Glider($simpleCarousel, {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+//  dots: ".js-carousel--simple-dots",
+  arrows: {
+    prev: ".js-carousel--simple-prev",
+    next: ".js-carousel--simple-next",
+  },
+  responsive:[
+    {
+    breakpoint: 900,
+    settings: {
+       slidesToShow: 2,
+       slidesToScroll: 2,
+     },
+    },
+  ],
+});
+
