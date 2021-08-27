@@ -1,10 +1,10 @@
 <div class="col-12 col-md-4 mb-4">
-    <div <?php post_class('highlight-secondary h-100'); ?> >
+    <div <?php post_class('highlight-secondary h-100'); ?>>
         <!-- post thumbnail -->
         <?php $featured_img_url = get_the_post_thumbnail_url($post->ID, 'large'); ?>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="d-block">
-                    <img data-src="<?php the_post_thumbnail_url($size); ?>" class="img-fluid w-100 lozad">
-            </a>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="d-block">
+            <img data-src="<?php the_post_thumbnail_url($size); ?>" class="img-fluid w-100 lozad">
+        </a>
         <!-- /post thumbnail -->
 
         <!-- post title -->

@@ -1,17 +1,16 @@
 <section class="row padtop10 padbottom10 padbottom3">
-<div class="col-12 col-sm-6 mb-4" style="margin:auto;text-align:center">
-<?php
-$users = get_users('role=editor');
-    foreach ($users as $user)
-    {
-        // get user who have posts only
-          echo get_avatar($user);
-          echo '<p style="font-weight: 400;text-align: center;font-size: 3.7rem;">'.$user->display_name.'</p>';
-  //        echo '</h1>';
-    }
+    <div class="col-12 col-sm-6 mb-4" style="margin:auto;text-align:center">
+        <?php
+        $users = get_users('role=editor');
+        foreach ($users as $user) {
+            // get user who have posts only
+            echo get_avatar($user);
+            echo '<p style="font-weight: 400;text-align: center;font-size: 3.7rem;">' . $user->display_name . '</p>';
+            //        echo '</h1>';
+        }
 
-?>
-</div>
+        ?>
+    </div>
 </section>
 
 <!-- <div class="author_bio_section mb-5">-->

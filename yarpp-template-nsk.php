@@ -8,8 +8,8 @@
                 <div class="mb-4">
                     <?php dfp_tag(array('id' => 'banner-300x250-area')); ?>
                 </div>
-            <br />  
-            <hr>
+                <br />
+                <hr>
             <?php else : ?>
                 <?php get_template_part('templates/components/sidebar-related'); ?>
             <?php endif; ?>
@@ -20,8 +20,9 @@
             <?php dfp_tag(array('id' => 'banner-300x600-2-area')); ?>
         </div>
 
-       <!-- <div class="mb-4">
-            <?//php dfp_tag(array('id' => 'banner-300x250-2-area')); ?>
+        <!-- <div class="mb-4">
+            <? //php dfp_tag(array('id' => 'banner-300x250-2-area')); 
+            ?>
         </div> -->
 
     <?php else : ?>
