@@ -96,13 +96,13 @@ $wp_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish'
 ?>
 
 <main class="container">
-    <section class="row">
+    <!--<section class="row">
         <div class="loader">
             <div class="wrapper">
                 <h2>Nousk.</h2>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <section class="row padtop padbottom10">
         <div class="col-12 col-sm-6 mb-4 padtop9 padbottom3 somobile">
