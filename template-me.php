@@ -10,6 +10,15 @@
   .pp-user-avatar {
     border-radius: 50%;
   }
+
+  .me-cont a{
+	color:white; 
+  }
+
+  .me-cont a:hover{
+       color:white;
+	text-decoration: underline;
+  }
 </style>
 <main class="container padtop3">
   <?php get_template_part('templates/components/header-post-author'); ?>

@@ -18,7 +18,7 @@
             ?>
 
             <?php foreach ($posts as $post) : setup_postdata($post); ?>
-                <div style="border-bottom: 0.5px solid white;padding-right: 15px;padding-left: 15px;">
+                <div style="border-bottom: 0.5px solid white;">
                     <?php
                     $titulo = get_the_title();
                     $semespaco = preg_replace('/\s+/', '', $titulo);
@@ -54,7 +54,7 @@
             ?>
 
             <?php foreach ($posts as $post) : setup_postdata($post); ?>
-                <div style="border-bottom: 0.5px solid white;padding-right: 15px;padding-left: 15px;">
+                <div style="border-bottom: 0.5px solid white;">
                     <?php
                     $titulo = get_the_title();
                     $semespaco = preg_replace('/\s+/', '', $titulo);
@@ -76,7 +76,7 @@
         <div class="desta-desc">
             <?php $tags = get_tags(); ?>
             <?php foreach ($tags as $tag) { ?>
-                <div style="border-bottom: 0.5px solid white;padding-right: 15px;padding-left: 15px;">
+                <div style="border-bottom: 0.5px solid white;">
                     <a href="<?php echo get_tag_link($tag->term_id); ?> " rel="tag" style="color: white !important;line-height:2;" class="tag-destaque"><?php echo $tag->name; ?></a></div>
                 <!--	<p><?php //echo $tag->name; 
                             ?></p>-->
