@@ -42,11 +42,121 @@ function get_cache_prevent_string($always = false)
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
 
     <meta name="theme-color" content="#ffffff">
+<script>
+function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    let animacao = document.querySelector("#loader");
+    animacao.style.display = "none";
+
+  } else {
+     user = "usuario";
+     if (user != "" && user != null) {
+       setCookie("username", user, 1);
+     }
+  }
+}
+</script>
 
     <?php wp_head(); ?>
-
 </head>
 <style>
+
+.wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        padding: 64px;
+        filter: contrast(15);
+    }
+
+    .wrapper h2 {
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        color: white;
+        margin: 0;
+        font-size: 128px;
+        font-weight: 500;
+        text-transform: uppercase;
+        /*filter: blur(8px);*/
+        display: block;
+        animation: animate 10s infinite alternate;
+    }
+ @keyframes animate {
+        0% {
+            letter-spacing: -80px;
+            filter: blur(8px);
+        }
+
+        50% {
+            filter: blur(8px);
+        }
+
+        100% {
+            letter-spacing: 10px;
+            filter: blur(8px);
+        }
+    }
+
+
+    .loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .loader>.wrapper {
+        width: 100%;
+    }
+
+    .loader.hidden {
+        animation: fadeOut 15s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
     .bg-vermelho {
         background-color: red !important;
     }
@@ -334,5 +444,5 @@ function get_cache_prevent_string($always = false)
 </style>
 
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onload="checkCookie()">
     <?php get_template_part('templates/core/header'); ?>

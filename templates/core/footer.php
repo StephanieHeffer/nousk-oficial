@@ -4,7 +4,7 @@
             <div class="contato-footer">
                 <a style="color: white;" href="https://github.com/StephanieHeffer" target="_blank" rel="noopener">Github
                 </a> <br />
-                <a style="color: white;" href="#" target="_blank" rel="noopener">LinkedIn</a>
+                <a style="color: white;" href="https://www.linkedin.com/in/stephanie-heffer-cavaletti-6a76b421b/" target="_blank" rel="noopener">LinkedIn</a>
                 <p id="btn-contato" style="color:white;">E-Mail</p>
             </div>
 
@@ -26,6 +26,15 @@
 <script>
     window.addEventListener("load", function() {
         const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+    });
+</script>
+
+<script>
+    const rafa = document.querySelector("#rafa");
+    rafa.addEventListener("click", function() {
+        const loader = document.querySelector(".loader");
+        loader.style.display = "block";
         loader.className += " hidden"; // class "loader hidden"
     });
 </script>
